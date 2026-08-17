@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/com.css" />
+    <title>Sudoku Lite - JaimeOC</title>
+  </head>
+
+  <body>
+    <!-- Navegacion -->
+    <nav
+      class="navbar is-white is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="container">
+        <div class="navbar-brand">
+          <a
+            class="navbar-item has-text-weight-bold is-size-5"
+            href="index.html"
+          >
+            <span
+              class="box is-size-6 px-3 py-2 mr-2 has-background-dark has-text-white"
+              style="border-radius: 4px"
+              >J</span
+            >
+            JAIME
+          </a>
+          <a
+            role="button"
+            class="navbar-burger"
+            data-target="navMenu"
+            aria-label="menu"
+          >
+            <span></span><span></span><span></span>
+          </a>
+        </div>
+        <div id="navMenu" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item" href="proyectos.html">Proyectos</a>
+            <div class="navbar-item">
+              <a class="button is-link is-rounded" href="#contacto">Contacto</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- BANNER -->
+    <div style="position: relative; padding-top: 52px">
+      <!-- Imagen de fondo -->
+      <figure class="image m-0" style="height: 480px; overflow: hidden">
+        <img
+          src="/Imagenes/Sudoku_Lite/FondoSudokuLite.png"
+          alt="Fondo Site Central Open Mall"
+          style="width: 100%; height: 100%; object-fit: cover; display: block"
+        />
+      </figure>
+
+      <!-- Contenedor Overlay (Flexbox para centrado responsivo) -->
+      <div
+        class="is-overlay is-flex is-align-items-center is-justify-content-center px-4 py-5"
+        style="top: 180px"
+      >
+        <!-- Tarjeta Principal (Agrupa título e imagen) -->
+        <div
+          class="has-background-link"
+          style="
+            width: 100%;
+            max-width: 1180px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+          "
+        >
+          <!-- Cabecera -->
+          <div class="px-4 py-4">
+            <h2
+              class="has-text-white has-text-weight-bold is-size-4-desktop is-size-5-mobile mb-1"
+            >
+              App Sudoku Lite
+            </h2>
+            <p class="has-text-white is-size-6">
+              <strong class="has-text-white">Cliente:</strong> Sudoku Lite
+            </p>
+          </div>
+
+          <!-- Imagen del Mockup -->
+          <figure class="image m-0">
+            <img
+              src="/Imagenes/Sudoku_Lite/PrincipalSudokuLite.png"
+              alt="Mockup Site Central Open Mall"
+              style="width: 100%; height: auto; display: block"
+            />
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <!-- CASO DE ESTUDIO -->
+    <section class="section is-medium">
+      <div class="container">
+        <div class="columns is-vcentered">
+          <div class="column is-5">
+            <figure class="image" style="border-radius: 8px; overflow: hidden">
+              <img
+                src="/Imagenes/Sudoku_Lite/casoEstudioSudokuLite.png"
+                alt="Caso de estudio"
+                style="
+                  object-fit: cover;
+                  height: 280px;
+                  width: 100%;
+                  border-radius: 8px;
+                "
+              />
+            </figure>
+          </div>
+          <div class="column is-6 is-offset-1">
+            <h3 class="title is-5 mb-3">Caso de estudio</h3>
+            <p class="has-text-grey-dark">
+              Enfocado en la simplificación de la experiencia de usuario para un juego de Sudoku en su versión más esencial. Se realizó una investigación orientada a comprender las necesidades de usuarios que buscan partidas rápidas, sin modos avanzados ni configuraciones complejas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ANÁLISIS -->
+    <section class="section has-background-light">
+      <div class="container">
+        <div class="columns is-vcentered">
+          <div class="column is-6">
+            <div class="is-flex is-align-items-flex-start">
+              <span
+                class="mr-3 mt-1"
+                style="
+                  width: 4px;
+                  min-height: 120px;
+                  background: #3273dc;
+                  border-radius: 4px;
+                  display: inline-block;
+                "
+              ></span>
+              <div>
+                <h4 class="title is-5 has-text-link mb-2">Analisis</h4>
+                <p class="has-text-grey-dark">
+                  Se estudiaron versiones simplificadas de Sudoku y patrones de diseño minimalista para identificar qué elementos son esenciales para una experiencia clara y accesible. También se analizaron comportamientos de usuarios que prefieren juegos rápidos y sin configuraciones complejas, con el fin de eliminar fricciones y mantener sólo lo imprescindible en pantalla.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="column is-5 is-offset-1 has-text-centered">
+            <figure
+              class="image is-square"
+              style="max-width: 280px; margin: 0 auto"
+            >
+              <img
+                src="Imagenes/Procesos.svg"
+                alt="Process illustration"
+                style="padding: 1rem"
+              />
+            </figure>
+            <p class="is-size-5 has-text-weight-bold has-text-grey-dark">
+              PROCESS
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OBJETIVOS Y ACCIONES -->
+    <section class="section has-background-light">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-5">
+            <div class="is-flex is-align-items-flex-start">
+              <span
+                class="mr-3 mt-1"
+                style="
+                  width: 4px;
+                  min-height: 100px;
+                  background: #3273dc;
+                  border-radius: 4px;
+                  display: inline-block;
+                "
+              ></span>
+              <div>
+                <h4 class="title is-5 has-text-link mb-2">
+                  Objetivos
+                </h4>
+                <p class="has-text-grey-dark">
+                  Ofrecer una versión simplificada y visualmente clara de Sudoku que priorice la accesibilidad, permita partidas rápidas y brinde una experiencia ligera sin elementos innecesarios.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="column is-5 is-offset-1">
+            <div class="is-flex is-align-items-flex-start">
+              <span
+                class="mr-3 mt-1"
+                style="
+                  width: 4px;
+                  min-height: 80px;
+                  background: #3273dc;
+                  border-radius: 4px;
+                  display: inline-block;
+                "
+              ></span>
+              <div>
+                <h4 class="title is-5 has-text-link mb-2">Acciones</h4>
+                <p class="has-text-grey-dark">
+                  Diseñar y depurar una interfaz minimalista que priorice la claridad del tablero y la simplicidad del flujo.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MOBILE -->
+    <section class="section is-medium has-background-white">
+      <div class="container">
+        <figure
+          style="
+            position: relative;
+            margin: 0 auto;
+            text-align: center;
+            max-width: 1200px;
+          "
+        >
+          <img
+            src="/Imagenes/Sudoku_Lite/FondMobil_SudokuLite.png"
+            alt="Site Central Open Mall"
+            style="
+              width: 100%;
+              height: auto;
+              object-fit: contain;
+              display: block;
+              margin: 0 auto;
+            "
+          />
+
+          <img
+            src="/Imagenes/Sudoku_Lite/ImgMobilSudokuLite.png"
+            alt="mobil 1"
+            style="
+              position: absolute;
+              top: 50%;
+              left: 65%;
+              transform: translate(-50%, -50%);
+              max-width: 80%;
+              height: auto;
+              z-index: 10;
+            "
+          />
+        </figure>
+      </div>
+    </section>
+    
+
+    <section class="section is-small has-background-white">
+    <!-- Un contenedor ayuda a centrar y limitar el ancho máximo en pantallas grandes -->
+    <div class="container">
+        <div class="box">
+            <!-- columns crea la fila. is-centered centra el contenido. is-variable y is-3 añaden un poco de espacio entre columnas -->
+            <div class="columns is-centered is-vcentered is-variable is-3">
+                
+                <!-- Columna 1 -->
+                <div class="column">
+                    <figure class="image">
+                        <img src="/Imagenes/Sudoku_Lite/ImaMobil01.png" alt="Mobil 1">
+                    </figure>
+                </div>
+
+                <!-- Columna 2 -->
+                <div class="column">
+                    <figure class="image">
+                        <img src="/Imagenes/Sudoku_Lite/ImaMobil02.png" alt="Mobil 2">
+                    </figure>
+                </div>
+
+                <!-- Columna 3 -->
+                <div class="column">
+                    <figure class="image">
+                        <img src="/Imagenes/Sudoku_Lite/ImaMobil03.png" alt="Mobil 3">
+                    </figure>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+    <!-- MÁS PROYECTOS -->
+    <section class="section">
+      <div class="container">
+        <div class="box">
+          <h4 class="title is-5 mb-4">Más proyectos</h4>
+          <div class="columns">
+            <div class="column is-5">
+              <div class="columns is-mobile is-vcentered">
+                <div class="column">
+                  <p class="has-text-weight-semibold mb-1">
+                    Site Sudoku Network
+                  </p>
+                  <p class="is-size-7 has-text-grey mb-2">Grupo 2MYR</p>
+                  <a class="is-size-7 has-text-link" href="sudoku-network.html"
+                    >Ver Proyecto &rsaquo;</a
+                  >
+                </div>
+                <div class="column is-4">
+                  <figure
+                    class="image is-4by3"
+                    style="border-radius: 6px; overflow: hidden"
+                  >
+                    <img
+                      src="/Imagenes/Sudoku.png"
+                      alt="Site Sudoku Network"
+                      style="object-fit: cover; border-radius: 6px"
+                    />
+                  </figure>
+                </div>
+              </div>
+            </div>
+
+            <div class="column is-5 is-offset-1">
+              <div class="columns is-mobile is-vcentered">
+                <div class="column">
+                  <p class="has-text-weight-semibold mb-1">App Sudoku Lite</p>
+                  <p class="is-size-7 has-text-grey mb-2">Sudoku Lite</p>
+                  <a class="is-size-7 has-text-link" href="sudoku-lite.html"
+                    >Ver Proyecto &rsaquo;</a
+                  >
+                </div>
+                <div class="column is-4">
+                  <figure
+                    class="image is-4by3"
+                    style="border-radius: 6px; overflow: hidden"
+                  >
+                    <img
+                      src="/Imagenes/SudokuLite.png"
+                      alt="App Sudoku Lite"
+                      style="object-fit: cover; border-radius: 6px"
+                    />
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section has-background-link" id="contacto">
+      <div class="container">
+        <div class="box" style="max-width: 600px; margin: 0 auto">
+          <div class="columns is-vcentered">
+            <div class="column is-4 has-text-centered">
+              <figure class="image is-128x128" style="margin: 0 auto">
+                <img src="/Imagenes/Contacto.png" alt="Imagen de contacto" />
+              </figure>
+            </div>
+            <div class="column is-8">
+              <h3 class="title is-4 has-text-weight-bold mb-2">Gracias</h3>
+              <p class="has-text-grey-dark mb-4">
+                Si tienes alguna pregunta o nesecitas informacion adicional no
+                dudes en consultarme. <br />
+                <strong>Conversemos</strong>
+              </p>
+              <p class="mb-2">
+                <span class="icon-text">
+                  <span class="icon has-text-grey"
+                    ><i class="fas fa-envelope"></i
+                  ></span>
+                  <span class="is-size-7">jaimeo25.ui@gmail.com</span>
+                </span>
+              </p>
+              <p>
+                <span class="icon-text">
+                  <span class="icon has-text-grey"
+                    ><i class="fas fa-phone"></i
+                  ></span>
+                  <span class="is-size-7">+51 999153286</span>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,165 @@
+/* =========================================================
+           VARIABLES DE MARCA
+           El azul del PDF (#3A67F3) es más vivo que el "link" por
+           defecto de Bulma, así que lo sobreescribimos aquí sin
+           tocar las clases del HTML (has-background-link, etc.)
+        ========================================================= */
+        :root {
+            --brand-blue: #3a67f3;
+            --brand-blue-dark: #2c52d1;
+            --brand-dark: #1c1c1c;
+        }
+
+        .has-background-link { background-color: var(--brand-blue) !important; }
+        .has-text-link { color: var(--brand-blue) !important; }
+        a.has-text-link:hover { color: var(--brand-blue-dark) !important; }
+        .button.is-link {
+            background-color: var(--brand-blue) !important;
+            border-color: var(--brand-blue) !important;
+        }
+        .button.is-link:hover { background-color: var(--brand-blue-dark) !important; }
+        .icon.has-text-link { color: var(--brand-blue) !important; }
+
+        body { color: #363636; }
+
+        /* =========================================================
+           NAVBAR
+        ========================================================= */
+        .navbar.is-white {
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+        }
+        .navbar-item.has-text-weight-bold { letter-spacing: 0.5px; }
+
+        /* =========================================================
+           BANNER PRINCIPAL
+        ========================================================= */
+        .banner-wrap {
+            position: relative;
+            padding-top: 52px;
+        }
+        .banner-bg-figure {
+            max-height: 480px;
+            overflow: hidden;
+            margin: 0;
+        }
+        .banner-bg-img {
+            width: 100%;
+            height: 480px;
+            object-fit: cover;
+            display: block;
+            filter: brightness(0.97);
+        }
+        .banner-card {
+            position: absolute;
+            top: 3rem;
+            left: 5rem;
+            width: calc(100% - 10rem);
+            max-width: 1180px;
+            border-radius: 8px;
+            padding: 1.75rem 2.5rem 2rem;
+            box-shadow: 0 20px 40px rgba(58, 103, 243, 0.25);
+        }
+        .banner-card-mock {
+            margin-top: 1.25rem;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        .banner-card-mock img {
+            width: 100%;
+            display: block;
+            border-radius: 6px;
+        }
+        .banner-spacer { height: 140px; }
+
+        @media (max-width: 768px) {
+            .banner-card { left: 1.25rem; width: calc(100% - 2.5rem); padding: 1.25rem; }
+            .banner-bg-img { height: 320px; }
+        }
+
+        /* =========================================================
+           ANALISIS / OBJETIVOS / ACCIONES - barra de acento
+        ========================================================= */
+        .accent-bar {
+            width: 4px;
+            min-height: 80px;
+            background: var(--brand-blue);
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        /* =========================================================
+           RESULTADOS
+        ========================================================= */
+        .metric-box .title { color: var(--brand-blue) !important; }
+
+        /* =========================================================
+           MOBILE / DESKTOP - banda de color + mockups salientes
+        ========================================================= */
+        .device-banner {
+            position: relative;
+            padding: 3.5rem 0;
+            overflow: visible;
+            margin-bottom: 7rem;
+        }
+        .device-banner-title {
+            color: #fff;
+            font-weight: 700;
+            font-size: 2.75rem;
+            margin: 0;
+        }
+        .device-mock-row {
+            position: absolute;
+            right: 6%;
+            bottom: -170px;
+            display: flex;
+            align-items: flex-end;
+            gap: 1.25rem;
+            z-index: 5;
+        }
+        .device-mock-row img {
+            display: block;
+            filter: drop-shadow(0 25px 35px rgba(0, 0, 0, 0.3));
+        }
+        .device-mock-phone-1 { width: 150px; transform: rotate(-10deg) translateY(10px); }
+        .device-mock-phone-2 { width: 170px; transform: rotate(3deg) translateY(-15px); z-index: 6; }
+        .device-mock-phone-3 { width: 150px; transform: rotate(-3deg) translateY(15px); }
+
+        .device-mock-desktop-single { width: 100%; max-width: 620px; }
+        .device-banner-desktop .device-mock-row {
+            right: 4%;
+            bottom: -140px;
+        }
+        .device-banner-desktop .device-mock-row img {
+            filter: drop-shadow(0 25px 35px rgba(0, 0, 0, 0.3));
+        }
+
+        @media (max-width: 900px) {
+            .device-mock-row { position: static; margin-top: 2rem; justify-content: center; }
+            .device-banner { margin-bottom: 3rem; padding-bottom: 1rem; }
+        }
+
+        /* Grid de screenshots debajo de cada banda */
+        .device-grid-section { padding-top: 3.5rem; }
+        .device-grid-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+            background: #fff;
+        }
+        .device-grid-item img { display: block; width: 100%; border-radius: 8px; }
+
+        .rotate-1 { transform: rotate(-6deg); }
+        .rotate-2 { transform: rotate(4deg); }
+        .rotate-3 { transform: rotate(-3deg); }
+        .rotate-4 { transform: rotate(5deg); }
+        .rotate-5 { transform: rotate(-5deg); }
+        .rotate-6 { transform: rotate(3deg); }
+
+        .device-grid-mobile .column { padding: 2rem 1.5rem; }
+        .device-grid-desktop { background-color: var(--brand-dark); }
+        .device-grid-desktop .column { padding: 1.75rem; }
+
+        /* =========================================================
+           CONTACTO
+        ========================================================= */
+        #contacto .box { max-width: 640px; }
